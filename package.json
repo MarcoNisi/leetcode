@@ -1,0 +1,16 @@
+{
+  "name": "leetcode",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Leetcode problems",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "author": "Marco Nisi",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.22",
+    "typescript": "^4.6.2"
+  }
+}
