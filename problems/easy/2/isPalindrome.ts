@@ -31,10 +31,22 @@ const isPalindrome = (num: number) => {
   return true
 }
 
-console.log(isPalindrome(121))
-console.log(isPalindrome(-121))
-console.log(isPalindrome(123))
-console.log(isPalindrome(222))
-console.log(isPalindrome(10))
-console.log(isPalindrome(11))
-console.log(isPalindrome(1221))
+/*
+Follow up: Could you solve it without converting the integer to a string?
+*/
+const isPalindromeWithoutString = (num: number) => {
+  const digits = Math.ceil(Math.log10(num + 1))
+  let acc = num
+  const actualDigits: number[] = []
+  if (num < 0) return false
+  for (let i = digits - 1; i >= 0; i--) {
+    const divider = Math.pow(10, i)
+    const result = Math.floor(acc / divider)
+    acc -= divider * result
+    actualDigits.push(result)
+  }
+  for (let i = 0; i < Math.floor(actualDigits.length / 2); i++) {
+    if (actualDigits[i] !== actualDigits[actualDigits.length - i - 1]) return false
+  }
+  return true
+}
