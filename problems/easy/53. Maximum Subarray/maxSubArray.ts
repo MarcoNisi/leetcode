@@ -23,17 +23,17 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
 */
 
 const maxSubArray = (nums: number[]): number => {
-  const sums = [nums[0]]
-  let max = sums[0]
-  for (let i = 1; i < nums.length; i++) {
-    const sumWithCurrentNum = sums[i - 1] + nums[i]
-    if (sumWithCurrentNum > nums[i]) {
-      sums.push(sumWithCurrentNum)
+  let max = nums[0]
+  let currentSum = 0
+  for (let i = 0; i < nums.length; i++) {
+    const current = nums[i]
+    if (current + currentSum >= current) {
+      currentSum += current
     } else {
-      sums.push(nums[i])
+      currentSum = current
     }
-    if (max < sums[i]) {
-      max = sums[i]
+    if (currentSum > max) {
+      max = currentSum
     }
   }
   return max
