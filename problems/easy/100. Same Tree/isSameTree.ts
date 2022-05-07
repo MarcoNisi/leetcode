@@ -38,12 +38,12 @@ const recursiveIsSameTree = (p: TreeNode | null, q: TreeNode | null): boolean =>
 }
 
 const isSameTree = (p: TreeNode | null, q: TreeNode | null): boolean => {
-  const qStack: TreeNode[] = []
-  const pStack: TreeNode[] = []
+  const qStack: (TreeNode | null)[] = []
+  const pStack: (TreeNode | null)[] = []
   let pCurrent: TreeNode | null = p
   let qCurrent: TreeNode | null = q
   while (qStack.length || pStack.length || pCurrent || qCurrent) {
-    while (pCurrent !== null && qCurrent !== null) {
+    while (pCurrent !== null || qCurrent !== null) {
       pStack.push(pCurrent)
       qStack.push(qCurrent)
       if (pCurrent) {
