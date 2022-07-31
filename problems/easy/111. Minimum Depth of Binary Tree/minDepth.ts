@@ -46,4 +46,25 @@ const minDepth = (root: TreeNode | null): number => {
   return depth(root, 1)
 }
 
+const betterMinDepth = (root: TreeNode | null): number => {
+  if (root === null) return 0
+  const queue: [TreeNode, number][] = [[root, 1]]
+  while (queue.length > 0) {
+    const lastElement = queue.splice(0, 1).at(0)
+    if (lastElement) {
+      const [node, depth] = lastElement
+      if (node.left === null && node.right === null) {
+        return depth
+      }
+      if (node.left !== null) {
+        queue.push([node.left, depth + 1])
+      }
+      if (node.right !== null) {
+        queue.push([node.right, depth + 1])
+      }
+    }
+  }
+  return 0
+}
+
 export default minDepth
