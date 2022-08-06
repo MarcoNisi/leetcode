@@ -45,4 +45,4 @@ const sortedArrayToBST = (nums: number[]): TreeNode | null => {
   return tree
 }
 
-export default null
+export default sortedArrayToBST

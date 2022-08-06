@@ -76,4 +76,4 @@ for (let i = 0; i < 1000000; i++) {
 end = Date.now()
 console.log('iterative', end - start)
 
-export default null;
+export default iterativeIsSymmetric;

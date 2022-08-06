@@ -51,4 +51,4 @@ const maxDepth = (root: TreeNode | null): number => {
   return max
 }
 
-export default null
+export default maxDepth

@@ -53,4 +53,4 @@ const isBalanced = (root: TreeNode | null): boolean => {
   }
 }
 
-export default null
+export default isBalanced

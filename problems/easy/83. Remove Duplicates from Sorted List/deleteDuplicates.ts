@@ -39,4 +39,4 @@ const deleteDuplicates = (head: ListNode | null): ListNode | null => {
   }
 }
 
-export default null
+export default deleteDuplicates
