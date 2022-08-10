@@ -28,3 +28,5 @@ const longestCommonPrefix = (strs: string[]): string => {
   }
   return strs[0]
 }
+
+export default longestCommonPrefix

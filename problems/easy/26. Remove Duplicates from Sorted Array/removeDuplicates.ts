@@ -65,3 +65,5 @@ const betterRemoveDuplicates = (nums: number[]): number => {
 
 console.log(betterRemoveDuplicates([1,1,2]))
 console.log(betterRemoveDuplicates([0,0,1,1,1,2,2,3,3,4]))
+
+export default betterRemoveDuplicates

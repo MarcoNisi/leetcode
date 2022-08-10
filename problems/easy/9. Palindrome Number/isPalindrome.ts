@@ -50,3 +50,5 @@ const isPalindromeWithoutString = (num: number) => {
   }
   return true
 }
+
+export default isPalindromeWithoutString

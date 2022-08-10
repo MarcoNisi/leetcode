@@ -50,3 +50,5 @@ const betterTwoSum = (nums: number[], target: number) => {
     }
   }
 }
+
+export default betterTwoSum

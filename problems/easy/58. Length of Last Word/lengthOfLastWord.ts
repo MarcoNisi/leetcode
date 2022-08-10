@@ -35,3 +35,5 @@ const lengthOfLastWord = (s: string): number => {
   }
   return len
 }
+
+export default lengthOfLastWord

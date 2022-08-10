@@ -38,3 +38,5 @@ const maxSubArray = (nums: number[]): number => {
   }
   return max
 }
+
+export default maxSubArray

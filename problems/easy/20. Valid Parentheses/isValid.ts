@@ -47,3 +47,5 @@ const isValid = (s: string): boolean => {
   }
   return open.length === 0
 }
+
+export default isValid

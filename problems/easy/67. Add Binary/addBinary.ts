@@ -41,3 +41,5 @@ const addBinary = (a: string, b: string): string => {
 console.log(addBinary('1010', '1011'))
 console.log(addBinary('11', '1'))
 console.log(addBinary('1', '0'))
+
+export default addBinary

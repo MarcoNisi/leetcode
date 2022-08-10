@@ -29,3 +29,5 @@ const climbStairs = (n: number): number => {
   }
   return results[results.length - 1]
 }
+
+export default climbStairs

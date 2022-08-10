@@ -69,3 +69,5 @@ const betterInorderTraversal = (root: TreeNode | null): number[] => {
   }
   return result
 }
+
+export default betterInorderTraversal

@@ -49,3 +49,5 @@ const strStr = (haystack: string, needle: string): number => {
   }
   return -1
 }
+
+export default strStr

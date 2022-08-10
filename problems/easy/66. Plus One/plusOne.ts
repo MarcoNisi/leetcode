@@ -47,3 +47,5 @@ const plusOne = (digits: number[]): number[] => {
   }
   return digits
 }
+
+export default plusOne

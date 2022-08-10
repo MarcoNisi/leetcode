@@ -64,3 +64,5 @@ const romanToInt = (s: string): number => {
   }
   return result
 }
+
+export default romanToInt

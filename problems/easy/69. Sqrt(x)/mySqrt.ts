@@ -57,3 +57,5 @@ start = Date.now()
 const s = numbers.map(betterMySqrt)
 end = Date.now()
 console.log('betterMySqrt', end - start) // 150ms on my computer
+
+export default betterMySqrt
